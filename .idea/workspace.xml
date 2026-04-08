@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f12befb-c7c8-48ca-b3c3-71b4573438ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/santoshtvk.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/formal-handscrossed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/full_pic__generated.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linked-in-exported_profile.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/next.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/public/CNAME" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/public/images/portrait-formal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/public/images/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/public/resume/santosh-tvk-profile.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/src/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/src/app/fonts/GeistMonoVF.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/src/app/fonts/GeistVF.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/src/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/src/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/src/app/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/src/app/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/src/content/portfolio.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/tsconfig.json" afterDir="false" />
-    </list>
+    <list default="true" id="4f12befb-c7c8-48ca-b3c3-71b4573438ed" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
