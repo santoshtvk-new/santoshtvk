@@ -628,19 +628,39 @@ button { font: inherit; cursor: pointer; }
   box-shadow: var(--neu-inset);
 }
 
-.skill-card__items {
-  list-style: none; padding: 0; margin: 0;
-  display: grid; gap: 0.5rem;
+.skill-card__list {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
 }
-.skill-card__items li {
-  display: flex; align-items: center; gap: 0.6rem;
-  font-size: 0.88rem;
-  color: var(--text-muted);
+
+.skill-item {
+  display: grid; gap: 0.4rem;
 }
-.skill-card__items li::before {
-  content: '▸';
-  color: var(--accent);
-  font-size: 0.7rem;
+
+.skill-item__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.skill-item__bar {
+  height: 8px;
+  background: var(--bg-dark);
+  border-radius: 4px;
+  box-shadow: var(--neu-inset);
+  overflow: hidden;
+}
+
+.skill-item__fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-warm));
+  box-shadow: 0 0 10px var(--accent-glow);
+  transition: width 1s ease-out;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -653,7 +673,10 @@ button { font: inherit; cursor: pointer; }
   grid-template-columns: 200px 1fr;
   gap: 1.5rem;
 }
-.timeline-card__meta { }
+.timeline-card__meta {
+  display: flex;
+  flex-direction: column;
+}
 .timeline-card__meta span {
   display: block;
   font-family: var(--font-mono-ui), monospace;
@@ -688,6 +711,33 @@ button { font: inherit; cursor: pointer; }
   border-radius: 50%;
   background: var(--accent-warm);
 }
+
+/* ═══════════════════════════════════════════════════════════
+   EDUCATION SECTION
+   ═══════════════════════════════════════════════════════════ */
+.education-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.education-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.5rem;
+}
+.education-card__meta span {
+  display: block;
+  font-family: var(--font-mono-ui), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-green);
+}
+.education-card__meta strong {
+  display: block; margin-top: 0.4rem;
+  font-size: 1rem; font-weight: 700;
+}
+.education-card h3 { font-size: 1.15rem; font-weight: 700; margin: 0 0 0.2rem; }
+.education-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
 
 /* ═══════════════════════════════════════════════════════════
    CONTACT SECTION

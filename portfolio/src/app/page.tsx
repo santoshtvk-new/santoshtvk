@@ -304,9 +304,25 @@ export default function Home() {
                   <h3>{skill.title}</h3>
                 </div>
                 <p>{skill.summary}</p>
-                <ul className="skill-card__items">
-                  {skill.items.map((item) => <li key={item}>{item}</li>)}
-                </ul>
+                <div className="skill-card__list">
+                  {skill.items.map((item) => (
+                    <div key={item.name} className="skill-item">
+                      <div className="skill-item__meta">
+                        <span>{item.name}</span>
+                        <span>{item.level}%</span>
+                      </div>
+                      <div className="skill-item__bar">
+                        <motion.div
+                          className="skill-item__fill"
+                          initial={{ width: 0 }}
+                          whileInView={{ width: `${item.level}%` }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 1, ease: "easeOut", delay: 0.2 + i * 0.1 }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </motion.article>
             ))}
           </div>
@@ -333,6 +349,30 @@ export default function Home() {
                   <ul className="timeline-card__highlights">
                     {exp.highlights.map((h) => <li key={h}>{h}</li>)}
                   </ul>
+                </div>
+              </motion.article>
+            ))}
+          </div>
+        </section>
+
+        {/* ══════════ EDUCATION ══════════ */}
+        <section id="education" className="section">
+          <motion.div className="section-heading" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-10%" }} variants={fadeInUp}>
+            <span className="section-kicker">Academic Hub</span>
+            <h2>Educational Foundation</h2>
+            <p>Specialized training in embedded systems and electrical engineering.</p>
+          </motion.div>
+
+          <div className="education-grid">
+            {portfolioContent.education.map((edu, i) => (
+              <motion.article key={edu.degree} className="neu-card education-card" custom={i} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-8%" }} variants={fadeInUp}>
+                <div className="education-card__meta">
+                  <span>{edu.period}</span>
+                  <strong>{edu.institution}</strong>
+                </div>
+                <div>
+                  <h3>{edu.degree}</h3>
+                  <p>{edu.description}</p>
                 </div>
               </motion.article>
             ))}
